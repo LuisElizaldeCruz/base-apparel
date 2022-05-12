@@ -1,3 +1,12 @@
+:root{
+    /* primario */
+    --Desaturated-Red: hsl(0, 36%, 70%);
+    --Soft-Red: hsl(0, 93%, 68%);
+
+    /* neutral */
+    --Dark-Grayish-red: hsl(0, 5%, 24%);
+}
+
 .contenedor{
     display: flex;
     width: 100%;
@@ -21,4 +30,46 @@
 
 .logo{
     margin-bottom: 50px;
+}
+
+.descripcion{
+    color: var(--Desaturated-Red);
+    font-size: 20px;
+}
+
+.were{
+    font-size: 70px;
+    font-weight: bold;
+}
+
+.coming{
+    color: var(--Dark-Grayish-red);
+    font-size: 70px;
+    font-weight: bold;
+}
+
+br{
+    background-color: aqua;
+}
+
+#datos{
+    width: auto;
+    display: flex;
+    justify-content: center;
+}
+
+#campo-txt{
+    width: 400px;
+    height: 40px;
+    border-radius: 15px;
+    margin: 10px;
+}
+
+#boton{
+    border-radius: 15px;
+    width: 80px;
+    height: 40px;
+    margin: auto 0;
+    /* background: Linear, 135deg, from hsl(0, 80%, 86%), to hsl(0, 74%, 74%); */
+    /* background: Linear, 135deg, from hsl(0, 0%, 100%), to hsl(0, 100%, 98%); */
 }
