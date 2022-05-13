@@ -35,6 +35,7 @@
 .descripcion{
     color: var(--Desaturated-Red);
     font-size: 20px;
+    margin-bottom: 40px;
 }
 
 .were{
@@ -52,8 +53,8 @@ br{
     background-color: aqua;
 }
 
+/*
 #datos{
-    /* width: auto; */
     display: flex;
     justify-content: center;
     position: relative;
@@ -64,13 +65,10 @@ br{
     width: 100%;
     height: 40px;
     border-radius: 15px;
-    /* margin: 10px; */
     border-style: solid;
     outline: none;
     border-color: var(--Desaturated-Red);
-    
 }
-
 
 #boton{
     border-radius: 15px;
@@ -78,27 +76,77 @@ br{
     height: 45px;
     margin: auto 0;
     background: linear-gradient(135deg,hsl(0, 80%, 86%),hsl(0, 74%, 74%));
-    /* background: Linear, 135deg, from hsl(0, 80%, 86%), to hsl(0, 74%, 74%); */
     border-color: var(--Desaturated-Red);
     position: absolute;
     bottom: 2px;
     right: 0;
-   
-    /* background: Linear, 135deg, from hsl(0, 0%, 100%), to hsl(0, 100%, 98%); */
 }
+*/
+
+/* prueba con otro formulario */
+.cont{
+    display: flex;
+    justify-content: center;
+    position: relative;
+    width: 400px;
+}
+
+#entrada{
+    width: 100%;
+    height: 40px;
+    border-radius: 15px;
+    border-style: solid;
+    outline: none;
+    border-color: var(--Desaturated-Red);
+}
+
+#btn{
+    border-radius: 15px;
+    width: 80px;
+    height: 45px;
+    margin: auto 0;
+    background: linear-gradient(135deg,hsl(0, 80%, 86%),hsl(0, 74%, 74%));
+    border-color: var(--Desaturated-Red);
+    position: absolute;
+    bottom: 2px;
+    right: 0;
+}
+
+
 
 @media screen and (max-width: 720px) {
     .contenedor{
         flex-direction: column-reverse;
         height: auto;
+        position: relative;
     }
 
     .mitad-izquierda{
         width: auto;
-        /* height: 600px; */
     }
 
     .mitad-derecha{
         width: auto;
+    }
+
+    .descripcion{
+        text-align: center;
+        margin-bottom: 40px;
+    }
+
+    .cont{
+        width: 90%;
+        margin: auto;
+    }
+
+    .logo{
+        position: absolute;
+        top: 0;
+        left: 20px;
+        margin: 10px;
+    }
+
+    .imagen-aside{
+        margin-top: 60px;
     }
 }
