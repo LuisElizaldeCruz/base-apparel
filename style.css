@@ -158,4 +158,16 @@ br{
        object-fit: none;
        object-fit: cover;
     }
+
+    .were{
+        font-size: 60px;
+    }
+    
+    .coming{
+        font-size: 60px;
+    }
+
+    #advertencia{
+        text-align: center;
+    }
 }

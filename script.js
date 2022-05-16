@@ -4,7 +4,6 @@ console.log("script funcionando");
  const p = document.createElement("p");
  p.id = "advertencia";
  
-
  /*Posicon en donde se mostrara el mensaje*/
 const frm = document.querySelector(".formulario");
 
@@ -13,25 +12,18 @@ document.getElementById("btn").addEventListener("click", ()=>{
  console.log("se presiono el boton");
  let correo = document.getElementById("entrada").value;
  
-
-
- if(correo == "luis@gmail.com"){
-     console.log("El correo es correcto");
-     p.textContent=" ";
- }
- else{
-     console.log("El correo es incorrecto");
-     p.textContent="inserta un correo valido!";
- }
-frm.insertAdjacentElement("afterend",p);
-
+validarCorreo(correo);
 })
 
-/*
-let validacion = (correo)=>{
-    if(correo != null){
 
+function validarCorreo(email){
+    let expresion = /^(([^<>()\[\]\\.,;:\s@"]+(\.[^<>()\[\]\\.,;:\s@"]+)*)|(".+"))@((\[[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}\])|(([a-zA-Z\-0-9]+\.)+[a-zA-Z]{2,}))$/;
+    if (expresion.test(email)){
+        p.textContent=" ";   
+    } 
+    else 
+    { 
+        p.textContent="inserta un correo valido!";
     }
+    frm.insertAdjacentElement("afterend",p);
 }
-
-*/
