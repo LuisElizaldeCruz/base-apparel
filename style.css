@@ -112,6 +112,11 @@ br{
     right: 0;
 }
 
+#advertencia{
+    color: red;
+    padding: 0 5%;
+}
+
 
 
 @media screen and (max-width: 720px) {
